@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\error.png",
+      "PackagePath": "staticwebassets\\img\\error.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\icon.png",
+      "PackagePath": "staticwebassets\\img\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\asm.png",
+      "PackagePath": "staticwebassets\\img\\lang\\asm.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\c.png",
+      "PackagePath": "staticwebassets\\img\\lang\\c.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\cpp.png",
+      "PackagePath": "staticwebassets\\img\\lang\\cpp.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\cs.png",
+      "PackagePath": "staticwebassets\\img\\lang\\cs.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\go.png",
+      "PackagePath": "staticwebassets\\img\\lang\\go.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\java.png",
+      "PackagePath": "staticwebassets\\img\\lang\\java.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\js.png",
+      "PackagePath": "staticwebassets\\img\\lang\\js.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\kotlin.svg",
+      "PackagePath": "staticwebassets\\img\\lang\\kotlin.svg"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\php.png",
+      "PackagePath": "staticwebassets\\img\\lang\\php.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\python.png",
+      "PackagePath": "staticwebassets\\img\\lang\\python.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\ruby.png",
+      "PackagePath": "staticwebassets\\img\\lang\\ruby.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\swift.png",
+      "PackagePath": "staticwebassets\\img\\lang\\swift.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\ts.png",
+      "PackagePath": "staticwebassets\\img\\lang\\ts.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\lang\\vb.png",
+      "PackagePath": "staticwebassets\\img\\lang\\vb.png"
+    },
+    {
+      "Id": "C:\\Users\\Artyom\\Desktop\\SchoolProject2\\wwwroot\\img\\languages.jpg",
+      "PackagePath": "staticwebassets\\img\\languages.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PLTest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PLTest.props",
+      "PackagePath": "build\\PLTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PLTest.props",
+      "PackagePath": "buildMultiTargeting\\PLTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PLTest.props",
+      "PackagePath": "buildTransitive\\PLTest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

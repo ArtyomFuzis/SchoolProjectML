@@ -1,0 +1,20 @@
+﻿<div class="container-fluid">
+	<div class="row">
+		<img height=110 style='object-fit: contain' class="col-lg-1 col-md-1 col-sm-2 col-4" src="~/img/error.png" />
+		<strong class="text-left col-lg-11 col-md-11 col-sm-10 col-8 display-3 mt-2">
+			@if (ViewBag.Code == null)
+			{
+				@:Ошибка в ошибке, данная страница вызвана неправльно :)
+			}
+			else if (ViewBag.Code == 404) 
+			{
+				@:Ошибка, данной страницы не существует!
+			}
+
+			else
+			{
+				@:Ой! Похоже, что-то сломалось (@ViewBag.Code)!
+			}
+		</strong>
+	</div>
+</div>

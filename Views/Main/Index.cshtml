@@ -1,0 +1,57 @@
+﻿@model QuestionTempModel
+@{
+    string last_data;
+    if (ViewBag.Last_Variant == null) last_data = ViewBag.Last_Data;
+    else last_data = ViewBag.Last_Data + ((int)ViewBag.Last_Variant).ToString();
+    bool end_flag = last_data.Length == 5;
+
+    int question_id=last_data.Length;
+    int variant_count = end_flag?0 : Model.get_count(question_id);
+    string radion_button_show(int id)
+    {
+        if (id <= variant_count) return "";
+        return "hidden";
+    }
+    string get_label(int id)
+    {
+        return Model.get_answer(question_id,id-1);
+    }
+    string get_question()
+    {
+        return !end_flag ? Model.get_question(question_id) : "Результат:";
+    }
+    string result()
+    {
+        if(end_flag)
+            return Model.get_result(last_data);
+        return "";
+    }
+}
+<div class="mx-5">
+    <div class="fs-3 text-center py-3 px-2 container-fluid" id="test_head">
+        <div class="display-6 fw-bold">Тест "Какой язык программирования тебе подходит?"</div>
+        <div class= "mt-2">
+            Данный тест подберёт вам один из самых популярных и актуальных языков программирования на 2022 год,
+            ведь в современном мире количество языков программирования уже сильно превышает количество естественных языков
+            и они всё продолжают создаваться, а старые языки программирования - совершенствоваться.
+            Важно выбрать из такого огромного количества, тот язык программирования, который и будет актуален долгое время, и будет удобным для ваших целей.
+        </div>
+    </div>
+    <div class="container fs-3 text-center mt-5 w-75" id="test">
+        <form method="get">
+            <input type="hidden" name="lastdata" value="@last_data" />
+            <div class="mt-3 py-2 h3 test_question">@get_question()</div>
+            <div class="mt-3 py-2 test_variant @radion_button_show(1)"><input type="radio" name="variant" value="1" class="test_variant_r hidden" id="var1" /> <label for="var1">@get_label(1)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(2)"><input type="radio" name="variant" value="2" class="test_variant_r hidden" id="var2" /> <label for="var2">@get_label(2)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(3)"><input type="radio" name="variant" value="3" class="test_variant_r hidden" id="var3" /> <label for="var3">@get_label(3)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(4)"><input type="radio" name="variant" value="4" class="test_variant_r hidden" id="var4" /> <label for="var4">@get_label(4)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(5)"><input type="radio" name="variant" value="5" class="test_variant_r hidden" id="var5" /> <label for="var5">@get_label(5)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(6)"><input type="radio" name="variant" value="6" class="test_variant_r hidden" id="var6" /> <label for="var6">@get_label(6)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(7)"><input type="radio" name="variant" value="7" class="test_variant_r hidden" id="var7" /> <label for="var7">@get_label(7)</label></div>
+            <div class="mt-1 py-2 test_variant @radion_button_show(8)"><input type="radio" name="variant" value="8" class="test_variant_r hidden" id="var8" /> <label for="var8">@get_label(8)</label></div>
+            <div class="mt-1 py-2 @(end_flag?"":"hidden")" id="test_result">На основе данных вами ответов я рекомендую изучать языки программирования: <br />@Html.Raw(result())</div>
+            <input name="accept" value="Выбрать" type="submit" class="mt-3 @(end_flag?"hidden":"")" />
+            <div class="mt-4 @(end_flag?"":"hidden")"></div>
+        </form>
+    </div>
+</div>
